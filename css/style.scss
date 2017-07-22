@@ -1,0 +1,125 @@
+@import "normalize.css";
+@import "fonts/stylesheet.css";
+
+$colorMain: #ffffff;
+$colorAccent: #d4151c;
+
+body,
+html {
+    background: black;
+    font-family: "texgyreadventorbold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 6vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    background: black radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(255, 0, 0, 0.2) 100%);
+}
+
+.text {
+    animation-name: fade-in-out;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.fade {
+    animation: fade-in-out 5s;
+    opacity: 0;
+}
+
+.shake {
+    animation-name: shake-opacity;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes fade-in-out {
+    0% {
+        color: $colorAccent;
+        text-shadow: 0 0 25px $colorAccent;
+        opacity: 0;
+    }
+
+    4% {
+        color: $colorAccent;
+        text-shadow: none;
+    }
+
+    16% {
+        color: $colorMain;
+        opacity: 0.90;
+    }
+
+    64% {
+        color: $colorMain;
+        opacity: 0.95;
+    }
+
+    76% {
+        color: $colorAccent;
+        text-shadow: none;
+    }
+
+    80% {
+        color: $colorAccent;
+        text-shadow: 0 0 25px $colorAccent;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes shake-opacity {
+    10% {
+        opacity: 0.91;
+        transform: translate(-0.05vh, 0vh);
+    }
+
+    20% {
+        opacity: 0.93;
+    }
+
+    30% {
+        opacity: 0.92;
+    }
+
+    40% {
+        opacity: 0.98;
+        transform: translate(0.03vh, -0.05vh);
+    }
+
+    50% {
+        opacity: 0.97;
+    }
+
+    60% {
+        opacity: 0.95;
+        transform: translate(-0.03vh, 0.02vh);
+    }
+
+    70% {
+        opacity: 0.99;
+    }
+
+    80% {
+        opacity: 0.98;
+    }
+
+    90% {
+        opacity: 0.97;
+    }
+
+    100% {
+        opacity: 0.96;
+        transform: translate(0vh, 0vh);
+    }
+}

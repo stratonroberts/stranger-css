@@ -1,0 +1,200 @@
+@import url(normalize.css);
+@import url(fonts/stylesheet.css);
+body,
+html {
+  background: black;
+  font-family: "texgyreadventorbold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 6vh;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  background: black radial-gradient(ellipse at center, black 0%, rgba(255, 0, 0, 0.2) 100%);
+}
+
+.text {
+  -webkit-animation-name: fade-in-out;
+          animation-name: fade-in-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+  text-align: center;
+  line-height: 5vh;
+}
+
+.fade {
+  -webkit-animation: fade-in-out 5s;
+          animation: fade-in-out 5s;
+  opacity: 0;
+}
+
+.shake {
+  -webkit-animation-name: shake-opacity;
+          animation-name: shake-opacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fade-in-out {
+  0% {
+    color: #d4151c;
+    text-shadow: 0 0 25px #d4151c;
+    opacity: 0;
+  }
+  4% {
+    color: #d4151c;
+    text-shadow: none;
+  }
+  16% {
+    color: #ffffff;
+    opacity: 0.90;
+  }
+  64% {
+    color: #ffffff;
+    opacity: 0.95;
+  }
+  76% {
+    color: #d4151c;
+    text-shadow: none;
+  }
+  80% {
+    color: #d4151c;
+    text-shadow: 0 0 25px #d4151c;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    color: #d4151c;
+    text-shadow: 0 0 25px #d4151c;
+    opacity: 0;
+  }
+  4% {
+    color: #d4151c;
+    text-shadow: none;
+  }
+  16% {
+    color: #ffffff;
+    opacity: 0.90;
+  }
+  64% {
+    color: #ffffff;
+    opacity: 0.95;
+  }
+  76% {
+    color: #d4151c;
+    text-shadow: none;
+  }
+  80% {
+    color: #d4151c;
+    text-shadow: 0 0 25px #d4151c;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shake-opacity {
+  10% {
+    opacity: 0.91;
+    -webkit-transform: translate(-0.05vh, 0vh);
+            transform: translate(-0.05vh, 0vh);
+  }
+  20% {
+    opacity: 0.93;
+  }
+  30% {
+    opacity: 0.92;
+  }
+  40% {
+    opacity: 0.98;
+    -webkit-transform: translate(0.03vh, -0.05vh);
+            transform: translate(0.03vh, -0.05vh);
+  }
+  50% {
+    opacity: 0.97;
+  }
+  60% {
+    opacity: 0.95;
+    -webkit-transform: translate(-0.03vh, 0.02vh);
+            transform: translate(-0.03vh, 0.02vh);
+  }
+  70% {
+    opacity: 0.99;
+  }
+  80% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.97;
+  }
+  100% {
+    opacity: 0.96;
+    -webkit-transform: translate(0vh, 0vh);
+            transform: translate(0vh, 0vh);
+  }
+}
+
+@keyframes shake-opacity {
+  10% {
+    opacity: 0.91;
+    -webkit-transform: translate(-0.05vh, 0vh);
+            transform: translate(-0.05vh, 0vh);
+  }
+  20% {
+    opacity: 0.93;
+  }
+  30% {
+    opacity: 0.92;
+  }
+  40% {
+    opacity: 0.98;
+    -webkit-transform: translate(0.03vh, -0.05vh);
+            transform: translate(0.03vh, -0.05vh);
+  }
+  50% {
+    opacity: 0.97;
+  }
+  60% {
+    opacity: 0.95;
+    -webkit-transform: translate(-0.03vh, 0.02vh);
+            transform: translate(-0.03vh, 0.02vh);
+  }
+  70% {
+    opacity: 0.99;
+  }
+  80% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.97;
+  }
+  100% {
+    opacity: 0.96;
+    -webkit-transform: translate(0vh, 0vh);
+            transform: translate(0vh, 0vh);
+  }
+}
