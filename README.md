@@ -1,7 +1,7 @@
 # stranger-css
 It's not CSS, it's stranger CSS.
 
-Demo: http://demo.straton.design/stranger-css/
+**Demo:** http://demo.straton.design/stranger-css/
 
 ## Acknowledgements
 - Inspired by Netflix's Stranger Things title sequence
